@@ -4,15 +4,14 @@
 Momo是一款基于Python实现的轻量级的CLI tool，它基于browser webdrive实现了在 www.xuexi.com 网站上自动打开图文或者视频连接，并自动实现浏览器页面自动
 向下翻页功能，用以模拟人的真实阅读行为。如果扫码登录还能自动累计积分哦！
 
-Download
----------
-
-You can get the source code from `GitHub`_:
-
-.. _GitHub: https://github.com/liuweicai/momo
 
 Installing
 ----------
+
+Download the source code from `GitHub`_
+
+.. _GitHub: https://github.com/liuweicai/momo
+
 
 Change to the root directory of the project:
 
