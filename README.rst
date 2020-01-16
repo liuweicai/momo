@@ -9,7 +9,7 @@ Download
 
 You can get the source code from `GitHub`_:
 
-.. _GitHun: https://github.com/liuweicai/momo
+.. _GitHub: https://github.com/liuweicai/momo
 
 Installing
 ----------
