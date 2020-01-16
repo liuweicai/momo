@@ -24,7 +24,6 @@ def format_help(help):
 
 
 @click.group(invoke_without_command=True)
-#@click.version_option(prog_name=click.style("momo", bold=True), version=__version__, help=click.style("Show momo the version.", fg='green'))
 @click.version_option(message=click.style(__version__, bold=True), version=__version__, help=click.style("Show momo the version.", fg='green'))
 @click.help_option(help=click.style("Just Tell You MOMO is Very Powerful.", fg='yellow'))
 @click.pass_context
