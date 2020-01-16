@@ -17,6 +17,7 @@ Installing
 Change to the root directory of the project:
 
 .. code-block:: text
+
     $ cd momo
 
 Install using `pip`_:
