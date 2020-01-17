@@ -11,7 +11,7 @@ with io.open("momo/__init__.py", "rt", encoding="utf8") as f:
     version = re.search(r"__version__ = '(.*?)'", f.read()).group(1)
 
 setup(
-    name="momo",
+    name="momo_ma",
     version=version,
     packages = find_packages(),
     include_package_data = True,
