@@ -8,22 +8,12 @@ Momo是一款基于Python实现的轻量级的CLI tool，它基于browser webdri
 Installing
 ----------
 
-Download the source code from `GitHub`_
-
-.. _GitHub: https://github.com/liuweicai/momo
-
-
-Change to the root directory of the project:
-
-.. code-block:: text
-
-    $ cd momo
 
 Install using `pip`_:
 
 .. code-block:: text
 
-    $ pip install --editable .
+    $ pip install momo_ma
 
 MOMO supports Python 3.5 and newer.
 
@@ -49,3 +39,4 @@ Links
 
 *   Documentation: https://github.com/liuweicai/momo
 *   Code: https://github.com/liuweicai/momo
+*   PyPI: https://pypi.org/project/momo-ma
