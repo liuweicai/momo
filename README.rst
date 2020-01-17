@@ -37,6 +37,6 @@ How to use it? Here is an example of a momo  usage:
 Links
 -----
 
-*   Documentation: https://github.com/liuweicai/momo
+*   Documentation: https://momo-ma.readthedocs.io/en/latest/
 *   Code: https://github.com/liuweicai/momo
 *   PyPI: https://pypi.org/project/momo-ma
