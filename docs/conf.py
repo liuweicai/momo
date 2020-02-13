@@ -14,7 +14,7 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
-from pallets_sphinx_themes import ProjectLink
+#from pallets_sphinx_themes import ProjectLink
 import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
@@ -31,7 +31,6 @@ author = 'weicai'
 # ones.
 master_doc = 'index'
 extensions = [
-    "pallets_sphinx_themes",
     "sphinxcontrib.disqus",
     "sphinx_rtd_theme",
 ]
@@ -53,6 +52,7 @@ disqus_shortname = 'blackmomo'
 #html_theme = 'alabaster'
 #html_theme = 'flask'
 html_theme = "sphinx_rtd_theme"
+"""
 html_context = {
     "project_links": [
         ProjectLink("Donate to Pallets", "https://palletsprojects.com/donate"),
@@ -62,6 +62,7 @@ html_context = {
         ProjectLink("Issue Tracker", "https://github.com/pallets/flask/issues/"),
     ]
 }
+"""
 html_sidebars = {
     "index": ["project.html", "localtoc.html", "searchbox.html"],
     "**": ["localtoc.html", "relations.html", "searchbox.html"],
