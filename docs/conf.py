@@ -14,6 +14,8 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+from pallets_sphinx_themes import ProjectLink
+import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
@@ -27,7 +29,11 @@ author = 'weicai'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
+master_doc = 'index'
 extensions = [
+    "pallets_sphinx_themes",
+    "sphinxcontrib.disqus",
+    "sphinx_rtd_theme",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -38,17 +44,34 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
-
+disqus_shortname = 'blackmomo'
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
-
+#html_theme = 'alabaster'
+#html_theme = 'flask'
+html_theme = "sphinx_rtd_theme"
+html_context = {
+    "project_links": [
+        ProjectLink("Donate to Pallets", "https://palletsprojects.com/donate"),
+        ProjectLink("Flask Website", "https://palletsprojects.com/p/flask/"),
+        ProjectLink("PyPI releases", "https://pypi.org/project/Flask/"),
+        ProjectLink("Source Code", "https://github.com/pallets/flask/"),
+        ProjectLink("Issue Tracker", "https://github.com/pallets/flask/issues/"),
+    ]
+}
+html_sidebars = {
+    "index": ["project.html", "localtoc.html", "searchbox.html"],
+    "**": ["localtoc.html", "relations.html", "searchbox.html"],
+}
+singlehtml_sidebars = {"index": ["project.html", "localtoc.html"]}
+html_static_path = ['_static']
+html_favicon = "_static/favicon.ico"
+#html_title = "Flask Documentation ({})".format(version)
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
-html_favicon = "_static/favicon.ico"
-master_doc = 'index'
+
+

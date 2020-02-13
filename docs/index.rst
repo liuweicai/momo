@@ -24,6 +24,7 @@ MOMO supports Python 3.5 and newer.
 
 .. _pip: https://pip.pypa.io/en/stable/quickstart/
 
+.. include:: comment.rst
 
 Usage Example
 ----------------
@@ -45,3 +46,4 @@ Links
 *   Documentation: https://momo-ma.readthedocs.io/en/latest/
 *   Code: https://github.com/liuweicai/momo
 *   PyPI: https://pypi.org/project/momo-ma
+
